@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     // console.log(currentState);
         } else if (currentState === "scene5") {
             container.classList.add("scene5");
-            sceneTitle.textContent = "AH! Quick!! its on fire! blow it out!";
+            sceneTitle.textContent = "AH! Quick!! Its on fire! Blow it out!";
             sceneText.textContent = "Surely NOW its toasted enough to make a s'more?";
             button1.style.display = "inline-block";
             button1.textContent = "Make a s'more";
