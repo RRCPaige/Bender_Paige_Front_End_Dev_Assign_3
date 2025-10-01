@@ -145,13 +145,19 @@ document.addEventListener("DOMContentLoaded", () =>{
             sceneText.textContent = "I hope you enjoyed your marshmallow adventure!";
             button1.style.display = "none";
             button2.style.display = "none";
-         
+    // console.log(sceneTitle.textContent);
+    // console.log(sceneText.textContent);
+    // console.log(button1.style.display);
+    // console.log(button2.style.display);
+    // console.log(currentState);
+        } 
     console.log(sceneTitle.textContent);
     console.log(sceneText.textContent);
     console.log(button1.style.display);
     console.log(button2.style.display);
-    console.log(currentState);
-    }     
+    console.log(currentState);  
+    console.log(button1.onclick)
+    console.log(button2.onclick)  
     };
     renderQuestion();
 });
