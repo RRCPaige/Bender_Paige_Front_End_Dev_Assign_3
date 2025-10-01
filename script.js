@@ -113,12 +113,33 @@ document.addEventListener("DOMContentLoaded", () =>{
                 currentState = "scene6";
                 renderQuestion();
             };
+    // console.log(sceneTitle.textContent);
+    // console.log(sceneText.textContent);
+    // console.log(button1.style.display);
+    // console.log(button2.style.display);
+    // console.log(currentState);
+        }else if (currentState === "scene6") {
+            container.classList.add("scene6");
+            sceneTitle.textContent = "....";
+            sceneText.textContent = "How about I get out a new marshmallow.";
+            button1.style.display = "inline-block";
+            button1.textContent = "Try again";
+            button1.onclick = () => {
+                currentState = "scene1";
+                renderQuestion();
+            };
+            button2.style.display = "inline-block";
+            button2.textContent = "Hang head in defeat";
+            button2.onclick = () => {
+                currentState = "scene7";
+                renderQuestion();
+            };
     console.log(sceneTitle.textContent);
     console.log(sceneText.textContent);
     console.log(button1.style.display);
     console.log(button2.style.display);
     console.log(currentState);
-            
+       
         }     
     };
     renderQuestion();
