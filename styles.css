@@ -17,17 +17,14 @@ body{
     flex-wrap: wrap;
      
 }
-.scenes{
+#scene-container{
     border: 1px solid #222;
     border-radius: 50px;
     padding: 1rem;
-    width: 30%;
+    width: 25%;
     height: 55%;
     background-color: #fff;
     box-shadow: 2px 2px 4px #aaa;
-    text-align: center;
-    width: 30%;
-    height: 55%;
-    /* display: none; */
-    
+    text-align: center;   
+    max-width: 400px; 
 }
