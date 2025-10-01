@@ -134,13 +134,24 @@ document.addEventListener("DOMContentLoaded", () =>{
                 currentState = "scene7";
                 renderQuestion();
             };
+    // console.log(sceneTitle.textContent);
+    // console.log(sceneText.textContent);
+    // console.log(button1.style.display);
+    // console.log(button2.style.display);
+    // console.log(currentState);
+        }else if (currentState === "scene7") {
+            container.classList.add("scene7");
+            sceneTitle.textContent = "You have reached the end.";
+            sceneText.textContent = "I hope you enjoyed your marshmallow adventure!";
+            button1.style.display = "none";
+            button2.style.display = "none";
+         
     console.log(sceneTitle.textContent);
     console.log(sceneText.textContent);
     console.log(button1.style.display);
     console.log(button2.style.display);
     console.log(currentState);
-       
-        }     
+    }     
     };
     renderQuestion();
 });
