@@ -92,12 +92,32 @@ document.addEventListener("DOMContentLoaded", () =>{
                 currentState = "scene5";
                 renderQuestion();
             };
+    // console.log(sceneTitle.textContent);
+    // console.log(sceneText.textContent);
+    // console.log(button1.style.display);
+    // console.log(button2.style.display);
+    // console.log(currentState);
+        } else if (currentState === "scene5") {
+            container.classList.add("scene5");
+            sceneTitle.textContent = "AH! Quick!! its on fire! blow it out!";
+            sceneText.textContent = "Surely NOW its toasted enough to make a s'more?";
+            button1.style.display = "inline-block";
+            button1.textContent = "Make a s'more";
+            button1.onclick = () => {
+                currentState = "scene7";
+                renderQuestion();
+            };
+            button2.style.display = "inline-block";
+            button2.textContent = "Roast longer";
+            button2.onclick = () => {
+                currentState = "scene6";
+                renderQuestion();
+            };
     console.log(sceneTitle.textContent);
     console.log(sceneText.textContent);
     console.log(button1.style.display);
     console.log(button2.style.display);
     console.log(currentState);
-        
             
         }     
     };
