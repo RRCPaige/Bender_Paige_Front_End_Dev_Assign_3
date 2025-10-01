@@ -29,11 +29,12 @@ document.addEventListener("DOMContentLoaded", () =>{
                 currentState = "scene3";
                 renderQuestion();
             };
-        }
     console.log(sceneTitle.textContent);
     console.log(sceneText.textContent);
     console.log(button1.style.display);
     console.log(button2.style.display);
-        
+    console.log(currentState);
+        }
     };
+    renderQuestion();
 });
