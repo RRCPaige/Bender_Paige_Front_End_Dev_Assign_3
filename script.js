@@ -50,12 +50,55 @@ document.addEventListener("DOMContentLoaded", () =>{
                 currentState = "scene7";
                 renderQuestion();
             };
+    // console.log(sceneTitle.textContent);
+    // console.log(sceneText.textContent);
+    // console.log(button1.style.display);
+    // console.log(button2.style.display);
+    // console.log(currentState);
+        } else if (currentState === "scene3") {
+            container.classList.add("scene3");
+            sceneTitle.textContent = "Wow! Thats one lightly toasted marshmallow!";
+            sceneText.textContent = "Is this toasted enough to make a s'more?";
+            button1.style.display = "inline-block";
+            button1.textContent = "Make a s'more";
+            button1.onclick = () => {
+                currentState = "scene7";
+                renderQuestion();
+            };
+            button2.style.display = "inline-block";
+            button2.textContent = "Roast longer";
+            button2.onclick = () => {
+                currentState = "scene4";
+                renderQuestion();
+            };
+    // console.log(sceneTitle.textContent);
+    // console.log(sceneText.textContent);
+    // console.log(button1.style.display);
+    // console.log(button2.style.display);
+    // console.log(currentState);
+        } else if (currentState === "scene4") {
+            container.classList.add("scene4");
+            sceneTitle.textContent = "Oohhh! That marshmallow is golden brown now!";
+            sceneText.textContent = "Is this toasted enough to make a s'more now?";
+            button1.style.display = "inline-block";
+            button1.textContent = "Make a s'more";
+            button1.onclick = () => {
+                currentState = "scene7";
+                renderQuestion();
+            };
+            button2.style.display = "inline-block";
+            button2.textContent = "Roast longer";
+            button2.onclick = () => {
+                currentState = "scene5";
+                renderQuestion();
+            };
     console.log(sceneTitle.textContent);
     console.log(sceneText.textContent);
     console.log(button1.style.display);
     console.log(button2.style.display);
     console.log(currentState);
-       
+        
+            
         }     
     };
     renderQuestion();
